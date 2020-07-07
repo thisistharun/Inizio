@@ -1,0 +1,114 @@
+<html>
+<head>
+<title>Inizio</title>
+<link rel="icon" type="image/png" sizes="20x20" href="assets/img/inizio2.png">
+  <link rel="stylesheet" href="bodystyle.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
+  <link rel="stylesheet" src="print.css" media="print" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://printjs-4de6.kxcdn.com/print.min.js"></script>
+  <script src="scriptfile.js"></script>
+</head>
+<body>
+	<div class="base"> <img src = "http://www.sreenidhi.edu.in/assets/images/sreenidhi-logo.png" href="#hero" height = "60" width = "200" alt="college logo"> </div>
+	<div class="topnav">
+		<table>
+		<tr><td><input type="checkbox" value="Education" checked></td><td><button id="add_education" class="addnew">Add Education</button></td></tr>
+		<tr><td><input type="checkbox" value="Internship" checked></td><td><button id="add_internship" class="addnew">Add Internship</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Project" checked></td><td><button id="add_project" class="addnew">Add Project</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Course" checked></td><td><button id="add_course" class="addnew">Add Course</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Achievement" checked></td><td><button id="add_achievement" class="addnew">Add Achievement</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Publication" checked></td><td><button id="add_publication" class="addnew">Add Publication</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Technical" checked></td><td><button id="add_skill" class="addnew">Add Skill</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Hobby" checked></td><td><button id="add_hobby" class="addnew">Add Hobby</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Language" checked></td><td><button id="add_language" class="addnew">Add Language</button><br></td><tr>
+		<tr><td><input type="checkbox" value="Activity" checked></td><td><button id="add_eca" class="addnew">Add ECA</button><br></td><tr>
+		<tr><td colspan="2"><center><button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'page', type:'html', css:'bodystyle.css', scanStyles:'true'})">Print Preview</button></center></td></tr>
+		</table>
+	</div>
+	<div  id="page" class="paper" >
+	<center><img src="template1.jpg" style="width:794; height:1000; position:relative;"><center>
+		<table id="resume" width = "100%" class="trans">
+			<form>
+				<tr>
+					<td width="200" >
+						<div id="personal_info" align="right">
+							<table>
+							<tr><td><input type="text" class="personalinfo" size = "35" placeholder="Contact No" style=" text-align:right"></td><td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-telephone-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M2.267.98a1.636 1.636 0 0 1 2.448.152l1.681 2.162c.309.396.418.913.296 1.4l-.513 2.053a.636.636 0 0 0 .167.604L8.65 9.654a.636.636 0 0 0 .604.167l2.052-.513a1.636 1.636 0 0 1 1.401.296l2.162 1.681c.777.604.849 1.753.153 2.448l-.97.97c-.693.693-1.73.998-2.697.658a17.47 17.47 0 0 1-6.571-4.144A17.47 17.47 0 0 1 .639 4.646c-.34-.967-.035-2.004.658-2.698l.97-.969z"/></svg></td><tr>
+							<tr><td><input type="text" class="personalinfo" size = "35" placeholder="Email Id" style=" text-align:right"></td><td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-envelope-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z"/></svg></td><tr>
+							<tr><td><input type="text" class="personalinfo" size = "35" placeholder="LinkedIn Id" style=" text-align:right"></td><td><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><path d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"/></svg></td><tr>
+							<tr><td><input type="text" class="personalinfo" size = "35" placeholder="City" style=" text-align:right"></td><td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></td><tr>
+							</table>
+						</div>
+					</td>
+					<td width ="400">
+						<div id="names" align="right" style="margin-right:20px">
+							<input type="text" class="name" size="17" placeholder="FIRST NAME" style=" text-align:right">
+							<input type="text" class="name" size="17" placeholder="LAST NAME" style=" text-align:right"><br>
+						</div>
+					</td>
+				</tr>
+				<tr valign = "top">
+					<td  width = "200">
+						<div id="technicalskills" class="Technical new">
+							<P class="heading" style="display:inline-block"> TECHNICAL SKILLS</p><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Skill" style=" margin-left:40px"><br>
+						</div>
+						<div id="hobbies" class="Hobby new">
+							<P class="heading" style="display:inline-block">HOBBIES</p>
+							<input type="text" class="personalinfo" size = "30" placeholder="Hobby" style=" margin-left:40px"><br>
+						</div>
+						<div id="languages" class="Language new">
+							<P class="heading" style="display:inline-block">LANGUAGES</p>
+							<input type="text" class="personalinfo" size = "30" placeholder="Language" style=" margin-left:40px"><br>
+						</div>
+						<div id="eca" class="Activity new">
+							<P class="heading" style="display:inline-block">EXTRA CIRRICULAR ACTIVITIES</p><br>
+							<textarea rows="4" cols="40" placeholder="Add Activity"></textarea>
+						</div>
+					</td>
+					<td  width = "400" >
+						<div id="education" class="Education new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">EDUCATION</p><br>
+							<input type="text" size = "30" placeholder="Course" class="personalinfo" style="font-weight:bold"><p style=" display:inline-block; font-family:Century Gothic; margin-left:5px; font-size:10px"> Sreenidhi Institute of Science and Technology </p><br>
+							<input type="text" class="personalinfo" size = "25" placeholder="Start Year - End year" style=" margin-left:0px"><p style=" display:inline-block; font-family:Century Gothic; margin-left:5px; font-size:10px"> secured </p>
+							<input type="text" class="personalinfo" size = "30" placeholder="GPA" style=" margin-left:5px"><br>
+						</div>
+						<div id="internships" class="Internship new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">INTERNSHIPS</p><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Company Name" style=" font-weight:bold">
+							<input type="text" class="personalinfo" size = "40" placeholder="Role / Subject" style=" margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Duration" style=" margin-left:0px">
+						</div>						
+						<div id="projects" class="Project new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">PROJECTS</p><br>
+							<input type="text" class="personalinfo" size = "60" placeholder="Name" style=" font-weight:bold"><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="One line Description" style=" margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "60" placeholder="Project Link" style=" margin-left:0px"><br>
+						</div>
+						<div id="courses" class="Course new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">CERTIFIED COURSES</p><br>
+							<input type="text" class="personalinfo" size = "50" placeholder="Field / Subject" style=" font-weight:bold">
+							<input type="text" class="personalinfo" size = "30" placeholder="Platform" style=" margin-left:5px">
+						</div>
+						<div id="achievements" class="Achievement new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">ACHIEVEMENTS</p><br>
+							<input type="text" class="personalinfo" size = "15" placeholder="Position" style=" font-weight:bold">
+							<input type="text" class="personalinfo" size = "50" placeholder="Event" style=" margin-left:5px"><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="Reason" style=" margin-left:0px"><br>
+						</div>
+						<div id="publications" class="Publication new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">RESEARCH PUBLICATIONS</p><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="Paper Title" style=" font-weight:bold"><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="Journal with Volume of publication" style=" margin-left:0px">
+						</div>
+					</td>
+				</tr>
+				<tr><td></td><td></td><br><br></tr>
+			</form>
+		</table>
+	</div>
+</body>
+</html>
