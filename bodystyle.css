@@ -129,6 +129,13 @@ background-color:white;
   }
 
 }
+
+@media only screen and (max-width: 360px){
+.topnav {
+display:none;
+}
+}
+
 @page {
     margin-top: 1cm;
     margin-bottom: 2cm;
