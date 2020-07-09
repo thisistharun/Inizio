@@ -70,6 +70,10 @@ $(document).ready(function() {
         e.preventDefault(); $(this).parent('div').remove();
     });
 	
+	$(document.getElementById('showmenu')).click(function(e){
+	$(document.getElementById('dropmenu')).toggle();
+	});
+	
 	$('input[type="checkbox"]').click(function() { 
                     var inputValue = $(this).attr("value"); 
                     $("." + inputValue).toggle(); 
