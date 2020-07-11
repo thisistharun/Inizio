@@ -8,14 +8,14 @@ $(document).ready(function() {
     });
 	$(document.getElementById('add_hobby')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('hobbies')).append('<div class="new"><input type="text" size = "30" placeholder="Hobby" class="p_info"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('hobbies')).append('<div class="new"><input type="text" size = "40" placeholder="Hobby" class="p_info"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('hobbies')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
     });
 	$(document.getElementById('add_language')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('languages')).append('<div class="new"><input type="text" size = "30" placeholder="Language" class="p_info"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('languages')).append('<div class="new"><input type="text" size = "40" placeholder="Language" class="p_info"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('languages')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
