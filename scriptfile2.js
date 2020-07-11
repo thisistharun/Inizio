@@ -50,7 +50,7 @@ $(document).ready(function() {
     });
 	$(document.getElementById('add_course')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('courses')).append('<div class="new"><input type="text" class="personalinfo" size = "50" placeholder="Field / Subject" style="font-weight:bold"><input type="text" class="personalinfo" size = "15" placeholder="Platform" style="border:none; margin-left:9px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('courses')).append('<div class="new"><input type="text" class="personalinfo" size = "45" placeholder="Field / Subject" style="font-weight:bold"><input type="text" class="personalinfo" size = "30" placeholder="Platform" style="border:none; margin-left:9px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('courses')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
