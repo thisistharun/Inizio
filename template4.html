@@ -37,9 +37,15 @@ textarea::-webkit-input-placeholder { /* WebKit browsers */
 		<tr><td><input type="checkbox" value="Hobby" checked></td><td><button id="add_hobby" class="addnew">Add Hobby</button><br></td><tr>
 		<tr><td><input type="checkbox" value="Language" checked></td><td><button id="add_language" class="addnew">Add Language</button><br></td><tr>
 		<tr><td><input type="checkbox" value="Activity" checked></td><td><button id="add_eca" class="addnew">Add ECA</button><br></td><tr>
-		<tr><td colspan="2"><center><button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'page', type:'html', css:'bodystyle.css', scanStyles:'true'})">Print Preview</button></center></td></tr>
+		<tr><td colspan="2"><center><button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'page', type:'html', css:'bodystyle.css', scanStyles:'true'}),myFunction()">Print Preview</button></center></td></tr>
 		</table>
 	</div>
+<script>
+
+function myFunction() {
+  alert("In Print> More Settings>Options \n 1. Uncheck Header and Footer \n 2. Check Background Graphics");
+}
+</script>
 	<div  id="page" class="paper" >
 	<center><img src="template4.jpg" style="width:794; height:1050; position:relative;"><center>
 		<table id="resume" width = "794" class="trans">
