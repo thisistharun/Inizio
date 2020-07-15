@@ -1,7 +1,7 @@
 $(document).ready(function() {
     $(document.getElementById('add_education')).click(function(e){ 
         e.preventDefault();
-            $(document.getElementById('education')).append('<div class="new"><input type="text" size = "20" placeholder="Class" class="personalinfo" style="font-weight:bold"><input type="text" size = "45" placeholder="Board of Education" class="personalinfo" style="margin-left:5px"><p style=" display:inline-block; font-family:Century Gothic; margin-left:6px; font-size:10px"> secured </p><input type="text" class="personalinfo" size = "4" placeholder="GPA" style=" margin-left:6px"><a href="#" class="remove_field" style="margin-right:0px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+            $(document.getElementById('education')).append('<div class="new"><input type="text" size = "20" placeholder="Class-Year of End" class="personalinfo" style="font-weight:bold"><input type="text" size = "45" placeholder="Board of Education" class="personalinfo" style="margin-left:5px"><p style=" display:inline-block; font-family:Century Gothic; margin-left:6px; font-size:10px"> secured </p><input type="text" class="personalinfo" size = "4" placeholder="GPA" style=" margin-left:6px"><a href="#" class="remove_field" style="margin-right:0px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('education')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
