@@ -1,7 +1,4 @@
 <head>
-<title>Inizio</title>
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-<link rel="icon" type="image/png" sizes="20x20" href="assets/img/inizio2.png">
   <link rel="stylesheet" href="bodystyle.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="https://printjs-4de6.kxcdn.com/print.min.css">
@@ -14,8 +11,10 @@
 	<div class="menuicon">
 		<button class="addnew" id="showmenu" ><i class="fa fa-bars" aria-hidden="true"></i></button>
 	</div>
-	<div class="base"> <img src = "http://www.sreenidhi.edu.in/assets/images/sreenidhi-logo.png" height = "60" width = "200" alt="college logo"> </div>
-	<div class="topnav"  id="dropmenu">
+	<div class="base"> 
+		<img src = "http://www.sreenidhi.edu.in/assets/images/sreenidhi-logo.png" height = "60" width = "200" alt="college logo">
+	</div>
+	<div class="topnav" id="dropmenu">
 		<table>
 		<tr><td><input type="checkbox" value="Education" checked></td><td><button id="add_education" class="addnew">Add Education</button></td></tr>
 		<tr><td><input type="checkbox" value="Internship" checked></td><td><button id="add_internship" class="addnew">Add Internship</button><br></td><tr>
@@ -27,17 +26,11 @@
 		<tr><td><input type="checkbox" value="Hobby" checked></td><td><button id="add_hobby" class="addnew">Add Hobby</button><br></td><tr>
 		<tr><td><input type="checkbox" value="Language" checked></td><td><button id="add_language" class="addnew">Add Language</button><br></td><tr>
 		<tr><td><input type="checkbox" value="Activity" checked></td><td><button id="add_eca" class="addnew">Add ECA</button><br></td><tr>
-		<tr><td colspan="2"><center><button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'page', type:'html', css:'bodystyle.css', scanStyles:'true'}),myFunction()">Print Preview</button></center></td></tr>
+		<tr><td colspan="2"><center><button class="addnew" style="background-color:black; color:white" onclick="printJS({printable:'page', type:'html', css:'bodystyle.css', scanStyles:'true'})">Print Preview</button></center></td></tr>
 		</table>
 	</div>
-	<script>
-
-function myFunction() {
-  alert("In Print> More Settings>Options \n 1. Uncheck Header and Footer \n 2. Check Background Graphics");
-}
-</script>
 	<div  id="page" class="paper" >
-	<center><img src="template5.jpg" style="width:794; height:1110; position:relative;"><center>
+	<center><img src="template5.jpg" style="width:794; height:1050; position:relative;"><center>
 		<table id="resume" width = "794" class="trans">
 			<form>
 				<tr>
@@ -50,72 +43,86 @@ function myFunction() {
 							<tr><td><input type="text" class="personalinfo" size = "35" placeholder="City" style=" text-align:right"></td><td><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-geo-alt" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/></svg></td><tr>
 							</table>
 						</div>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
 					</td>
 					<td width ="400">
 						<div id="names" align="right" style="margin-right:20px">
 							<input type="text" class="name" size="17" placeholder="FIRST NAME" style=" text-align:right">
 							<input type="text" class="name" size="17" placeholder="LAST NAME" style=" text-align:right"><br>
 						</div>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
 					</td>
 				</tr>
 				<tr valign = "top">
-					<td  width = "200">
-						<div id="technicalskills" class="Technical new " style="border-top-style:solid; border-top-color:#ff9c00">
+					<td  width = "200" >
+						<div id="technicalskills" class="Technical new" >
 							<P class="heading" style="display:inline-block"> TECHNICAL SKILLS</p><br>
-							<input type="text" class="personalinfo" size = "40" placeholder="Skill" style=" margin-left:40px"><br>
+							<input type="text" class="personalinfo" size = "35" placeholder="Skill" style=" margin-left:40px; font-weight:bold"><br>
+							<input type="text" class="personalinfo" size = "20" placeholder="Level" style=" margin-left:40px"><br>
 						</div>
-						<div id="hobbies" class="Hobby new " style="border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="hobbies" class="Hobby new" >
 							<P class="heading" style="display:inline-block">HOBBIES</p>
 							<input type="text" class="personalinfo" size = "40" placeholder="Hobby" style=" margin-left:40px"><br>
 						</div>
-						<div id="languages" class="Language new " style="border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="languages" class="Language new" >
 							<P class="heading" style="display:inline-block">LANGUAGES</p>
 							<input type="text" class="personalinfo" size = "40" placeholder="Language" style=" margin-left:40px"><br>
 						</div>
-						<div id="eca" class="Activity new " style="border-top-style:solid; border-top-color:#ff9c00">
-							<P class="heading" style="display:inline-block">EXTRACURRICULAR ACTIVITIES</p><br>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="eca" class="Activity new" >
+							<P class="heading" style="display:inline-block">EXTRA CIRRICULAR ACTIVITIES</p><br>
+							<input type="text" class="personalinfo" size = "35" placeholder="Heading" style=" margin-left:40px; font-weight:bold"><br>
 							<textarea rows="4" cols="40" placeholder="Add Activity"></textarea>
 						</div>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
 					</td>
 					<td  width = "400" >
-						<div id="education" class="Education new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
+						<div id="education" class="Education new" style="margin-left:30px">
 							<P class="headingR" style="display:inline-block">EDUCATION</p><br>
-							<input type="text" size = "30" placeholder="Course" class="personalinfo" style="font-weight:bold"><p style=" display:inline-block; font-family:Century Gothic; margin-left:5px; font-size:10px"> Sreenidhi Institute of Science and Technology </p><br>
-							<input type="text" class="personalinfo" size = "25" placeholder="Start Year - End year" style=" margin-left:0px"><p style=" display:inline-block; font-family:Century Gothic; margin-left:5px; font-size:10px"> secured </p>
-							<input type="text" class="personalinfo" size = "30" placeholder="GPA" style=" margin-left:5px"><br>
+							<input type="text" size = "20" placeholder="Course" class="personalinfo" style="font-weight:bold"><input type="text" size = "45" placeholder="College / University" class="personalinfo" style="margin-left:5px">
+							<p style=" display:inline-block; font-family:Century Gothic; margin-left:5px; font-size:10px"> secured </p>
+							<input type="text" class="personalinfo" size = "10" placeholder="GPA" style=" margin-left:5px"><br>
 						</div>
-						<div id="internships" class="Internship new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="internships" class="Internship new" style="margin-left:30px">
 							<P class="headingR" style="display:inline-block">INTERNSHIPS</p><br>
-							<input type="text" class="personalinfo" size = "30" placeholder="Company Name" style="font-weight:bold">
-							<input type="text" class="personalinfo" size = "40" placeholder="Role / Subject" style=" margin-left:0px"><br>
-							<input type="text" class="personalinfo" size = "30" placeholder="Duration" style=" margin-left:0px">
-						</div>						
-						<div id="projects" class="Project new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
-							<P class="headingR" style="display:inline-block">PROJECTS</p><br>
-							<input type="text" class="personalinfo" size = "60" placeholder="Name" style="font-weight:bold"><br>
-							<input type="text" class="personalinfo" size = "85" placeholder="One line Description" style=" margin-left:0px"><br>
-							<input type="text" class="personalinfo" size = "60" placeholder="Project Link" style=" margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "30" placeholder="Company Name" style=" font-weight:bold">
+							<input type="text" class="personalinfo" size = "30" placeholder="Role / Subject" style=" margin-left:0px"><input type="text" class="personalinfo" size = "20" placeholder="Duration" style="margin-left:0px"><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="Describe The Work" style=" margin-left:0px">
 						</div>
-						<div id="courses" class="Course new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="projects" class="Project new" style="margin-left:30px">
+							<P class="headingR" style="display:inline-block">PROJECTS</p><br>
+							<input type="text" class="personalinfo" size = "50" placeholder="Name" style=" font-weight:bold"><input type="text" class="personalinfo" size = "30" placeholder="Your Role" style=" margin-left:2px"><br>
+							<input type="text" class="personalinfo" size = "85" placeholder="Description" style=" margin-left:0px"><br>							
+						</div>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="courses" class="Course new" style="margin-left:30px">
 							<P class="headingR" style="display:inline-block">CERTIFIED COURSES</p><br>
-							<input type="text" class="personalinfo" size = "45" placeholder="Field / Subject" style="font-weight:bold">
+							<input type="text" class="personalinfo" size = "45" placeholder="Field / Subject" style=" font-weight:bold">
 							<input type="text" class="personalinfo" size = "30" placeholder="Platform" style=" margin-left:5px">
 						</div>
-						<div id="achievements" class="Achievement new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="achievements" class="Achievement new" style="margin-left:30px">
 							<P class="headingR" style="display:inline-block">ACHIEVEMENTS</p><br>
-							<input type="text" class="personalinfo" size = "15" placeholder="Position" style="font-weight:bold">
+							<input type="text" class="personalinfo" size = "15" placeholder="Position" style=" font-weight:bold">
 							<input type="text" class="personalinfo" size = "50" placeholder="Event" style=" margin-left:5px"><br>
 							<input type="text" class="personalinfo" size = "85" placeholder="Reason" style=" margin-left:0px"><br>
 						</div>
-						<div id="publications" class="Publication new " style="margin-left:30px; border-top-style:solid; border-top-color:#ff9c00">
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
+						<div id="publications" class="Publication new" style="margin-left:30px">
 							<P class="headingR" style="display:inline-block">RESEARCH PUBLICATIONS</p><br>
-							<input type="text" class="personalinfo" size = "85" placeholder="Paper Title" style="font-weight:bold"><br>
+							<input type="text" class="personalinfo" size = "75" placeholder="Paper Title" style=" font-weight:bold"><br>
 							<input type="text" class="personalinfo" size = "85" placeholder="Journal with Volume of publication" style=" margin-left:0px">
 						</div>
+						<hr style="width:90%; border-top: 1px solid #ff9c00">
 					</td>
 				</tr>
 				<tr><td></td><td></td><br><br></tr>
 			</form>
 		</table>
+		</center>
 	</div>
 </body>
