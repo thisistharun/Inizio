@@ -36,14 +36,14 @@ $(document).ready(function() {
     });
 	$(document.getElementById('add_project')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('projects')).append('<div class="new"><input type="text" class="personalinfo" size = "50" placeholder="Name" style=" font-weight:bold"><input type="text" class="personalinfo" size = "30" placeholder="Your Role" style=" margin-left:2px"><br><input type="text" class="personalinfo" size = "85" placeholder="Description" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('projects')).append('<div class="new"><input type="text" class="personalinfo" size = "50" placeholder="Name" style=" font-weight:bold"><input type="text" class="personalinfo" size = "28" placeholder="Your Role" style="font-weight:bold; margin-left:2px"><br><input type="text" class="personalinfo" size = "85" placeholder="Description" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('projects')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
     });
 	$(document.getElementById('add_achievement')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('achievements')).append('<div class="new"><input type="text" class="personalinfo" size = "15" placeholder="Position" style="font-weight:bold"><input type="text" class="personalinfo" size = "50" placeholder="Event" style=" margin-left:9px"><br><input type="text" class="personalinfo" size = "85" placeholder="Reason" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('achievements')).append('<div class="new"><input type="text" class="personalinfo" size = "15" placeholder="Position" style="font-weight:bold"><input type="text" class="personalinfo" size = "63" placeholder="Event" style=" margin-left:9px"><br><input type="text" class="personalinfo" size = "85" placeholder="Reason" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('achievements')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
