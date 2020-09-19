@@ -36,7 +36,7 @@ $(document).ready(function() {
     });
 	$(document.getElementById('add_project')).click(function(e){
         e.preventDefault();    
-			$(document.getElementById('projects')).append('<div class="new"><input type="text" class="personalinfo" size = "50" placeholder="Name" style=" font-weight:bold"><input type="text" class="personalinfo" size = "28" placeholder="Your Role" style="font-weight:bold; margin-left:2px"><br><input type="text" class="personalinfo" size = "85" placeholder="Description" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
+			$(document.getElementById('projects')).append('<div class="new"><input type="text" class="personalinfo" size = "45" placeholder="Name" style=" font-weight:bold"><input type="text" class="personalinfo" size = "28" placeholder="Your Role" style="font-weight:bold; margin-left:1px"><br><input type="text" class="personalinfo" size = "85" placeholder="Description" style=" margin-left:0px"><a href="#" class="remove_field" style="margin-right:30px; color:black; float:right"><i class="fa fa-times show-on-hover" aria-hidden="true"></i></a></div>');
     });  
     $(document.getElementById('projects')).on("click",".remove_field", function(e){
         e.preventDefault(); $(this).parent('div').remove();
